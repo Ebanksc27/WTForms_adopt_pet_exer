@@ -1,0 +1,10 @@
+<h2>{{ pet.name }}</h2>
+
+
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.photo_url.label }}: {{ form.photo_url() }}<br>
+    {{ form.notes.label }}: {{ form.notes() }}<br>
+    {{ form.available.label }}: {{ form.available() }}<br>
+    <input type="submit" value="Edit Pet">
+</form>

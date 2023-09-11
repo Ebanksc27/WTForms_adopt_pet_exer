@@ -1,0 +1,9 @@
+{% for pet in pets %}
+  <h2>{{ pet.name }}</h2>
+  {% if pet.photo_url %}
+    <img src="{{ pet.photo_url }}" alt="{{ pet.name }}">
+  {% endif %}
+  {% if pet.available %}
+    <strong>Available</strong>
+  {% endif %}
+{% endfor %}
